@@ -84,7 +84,8 @@ const reducer = (state, action) => {
     if (action.type === 'setQuestionQuantity') {
         return {
             ...state,
-            questionQuantity: action.payload
+            questionQuantity: action.payload,
+            questionIndex: 0
         }
     }
     if (action.type === 'handleSave') {
