@@ -30,7 +30,6 @@ const Profile = () => {
       name: profile.name?.toLowerCase(),
       email: profile.email,
       location: profile.location,
-      type: profile.type
     }).then(({data})=>{
       const {user} = data
       console.log(user)
