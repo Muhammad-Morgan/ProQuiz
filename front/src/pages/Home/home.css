@@ -1,0 +1,9 @@
+.m-list{
+    list-style: none;
+    gap: 2rem;
+  }
+  .m-item{
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  

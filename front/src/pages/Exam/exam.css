@@ -1,0 +1,51 @@
+.exam-page{
+    height: calc(100vh - 58px) !important;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 3rem;
+}
+.exam-center{
+    width: 90%;
+    max-width: 900px;
+    margin-inline: auto;
+    height: 80%;
+}
+.exam-card{
+    min-height: 220px;
+    background-color: #696969;
+    padding: 1rem 2rem;
+}
+.question-container{
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+}
+.question-container main{
+    width: 100%;
+}
+.answers-list{
+    list-style-type: none;
+}
+.answer-item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: .5rem;
+}
+.my-check{
+    background-color: transparent;
+    border: 2px solid rgb(1, 80, 117);
+    color: rgb(1, 80, 117);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    padding: .2rem .5rem;
+}
+.checked{
+    background-color: rgb(1, 80, 117);
+    color: #fff;
+}
+.nxt-btn{
+    display: flex;
+    justify-content: end;
+}

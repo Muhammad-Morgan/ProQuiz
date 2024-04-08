@@ -1,0 +1,27 @@
+.result-page {
+    background: linear-gradient(70deg, #a1a1a1, #e7e7e7);
+    height: calc(100vh - 58px) !important;
+    display: flex;
+    align-items: center;
+}
+
+.result-center {
+    width: 90vw;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.my-save {
+    border: none;
+    padding: .6rem 1rem;
+    background-color: #0b96d6;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.my-save:hover,
+.my-save:focus {
+    background-color: #0254a0;
+}

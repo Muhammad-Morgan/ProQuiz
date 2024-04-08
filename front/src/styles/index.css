@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  --bs-body-bg: rgb(235, 235, 235);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.my-img-responsive {
+  width: 80px;
+  height: 80px;
+}
+.my-search-nav-1{
+  border: none;
+  padding: .7rem 1.3rem;
+  background-color: #2795fc;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.my-search-nav-1:hover,
+.my-search-nav-1:focus{
+  background-color: #025aac;
+}
+footer{
+  background-color: rgb(63, 63, 63);
+}
+@media screen and (min-width: 900px) {
+  .my-img-responsive {
+    width: 90px;
+  }
+}

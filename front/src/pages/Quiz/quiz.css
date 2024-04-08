@@ -1,0 +1,14 @@
+.quiz-container{
+    background: linear-gradient(90deg,#949494,#f0eaea);
+    height: calc(100vh - 58px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.name-comp{
+    width: 90vw;
+    max-width: 700px;
+    margin-inline: auto;
+    background-color: #fff;
+    padding: 3rem;
+}

@@ -1,0 +1,11 @@
+.my-bg {
+    background: linear-gradient(90deg, #afafaf, #f0f0f0);
+    height: calc(100vh - 58px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.max-w{
+    max-width: 1200px;
+    margin-inline: auto;
+}

@@ -1,0 +1,77 @@
+.my-sidebar{
+    /* sidebar props */
+    background-color: #525252;
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    max-width: 302px;
+    padding: 1rem 0;
+    transition: all 0.3s linear;
+}
+.my-sidebar h2{
+    /* title color */
+    color: #fff;
+}
+.my-xmark{
+    color: #610000;
+}
+.list-group{
+    /* list of links */
+    --bs-body-bg: #525252;
+    border: none;
+    --bs-border-color: #525252;
+    --bs-border-radius: 0;
+}
+.list-group-item{
+    /* the links */
+    --bs-list-group-color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.list-group-item:hover,
+.list-group-item:focus{
+    background-color: #cacaca;
+    color: black;
+    padding-left: 1.5rem;
+}
+.sidebar-center{
+    /* adjustment for the height */
+    margin-top: 4rem;
+}
+.list-group-dropdown{
+    /* dropdown props */
+    padding: .5rem 1rem;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+.list-group-dropdown:hover,
+.list-group-dropdown:focus {
+    color: black;
+}  
+.list-group-dropdown:hover {
+    background-color: #cacaca;
+}  
+ .my-list-group{
+    list-style: none;
+    padding: 0;
+} 
+.my-list-group-item{
+    /* submenu */
+    color: #222;
+    padding-block: .5rem;
+    padding-inline: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.my-list-group-item:hover,
+.my-list-group-item:focus{
+    background-color: #7a7a7a;
+    padding-inline: 1.5rem;
+    color: #fff;
+}
+.links-container{
+    overflow: hidden;
+    transition: all 0.3s linear;
+    background-color: #969696;
+}

@@ -1,0 +1,42 @@
+.form-control{
+    --bs-body-bg: #f7f6f6;
+    --bs-border-color: #747474;
+}
+.form-select{
+    --bs-body-bg: #f7f6f6;
+    --bs-border-color: #747474;
+    cursor: pointer;
+}
+.form-con{
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    margin-inline: auto;
+    width: 80%;
+    max-width: 450px;
+    background-color: #fff;
+}
+.form-con-signup{
+    margin-top: 3rem;
+    padding: 1rem;
+    margin-inline: auto;
+    width: 80%;
+    max-width: 450px;
+    background-color: #fff;
+}
+.sign-btn{
+    background-color: #028dff;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 1rem;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+    margin-bottom: .5rem;
+}
+.sign-btn:hover,
+.sign-btn:focus{
+    background-color: #005aa3;
+}

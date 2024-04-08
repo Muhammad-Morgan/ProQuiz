@@ -1,0 +1,96 @@
+.navbar {
+    /* navbar bg */
+    /* background-color: #525252; */
+    background: linear-gradient(90deg,#3d3d3d,#535353,#8d8d8d);
+    /* logo hover color */
+    --bs-emphasis-color-rgb: #025aac;
+    color: var(--bs-emphasis-color-rgb);
+}
+
+.navbar-brand {
+    /* logo color */
+    --bs-navbar-brand-color: #fff;
+    /* logo size */
+    --bs-navbar-brand-font-size: 1.5rem;
+    font-size: var(--bs-navbar-brand-font-size);
+    /* logo font style */
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+
+.navbar-toggler-icon {
+    /* toggle button color */
+    color: #fff;
+}
+
+.nav-link {
+    /* navbar links color */
+    --bs-nav-link-color: #fff;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    /* navbar links hover color */
+    --bs-nav-link-hover-color: #b9b9b9;
+}
+
+.dropdown-menu {
+    /* navbar dropdown bg color */
+    --bs-body-bg: #fff;
+    /* navbar dropdown bg hover color */
+    --bs-tertiary-bg: #008cff;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    /* navbar dropdown hover color */
+    --bs-dropdown-link-hover-color: #fff;
+}
+
+.form-control {
+    /* search bg */
+    --bs-body-bg: #fff;
+}
+.my-search-nav{
+    border: none;
+    padding: .5rem 1.3rem;
+    background-color: #131725;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    font-size: 1.1rem;
+}
+.my-search-nav:hover,
+.my-search-nav:focus{
+    background-color: #4d515f;
+}
+.logout-nav{
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    color: #fc2727;
+    transition: all .3s ease-in-out;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.logout-nav:hover,
+.logout-nav:focus{
+    color: #9b0000;
+}
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+        /* logo size in large screens */
+        --bs-navbar-brand-font-size: 2rem;
+        font-size: var(--bs-navbar-brand-font-size);
+    }
+
+    .nav-link {
+        /* links size in large screens */
+        --bs-nav-link-font-size: 1.1rem;
+        font-size: var(--bs-nav-link-font-size);
+    }
+
+    .show {
+        display: none;
+    }
+}

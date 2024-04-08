@@ -1,0 +1,6 @@
+.edit-page{
+    min-height: calc(100vh - 58px);
+    background-color: rgb(219, 221, 223);
+    display: flex;
+    align-items: center;
+}
