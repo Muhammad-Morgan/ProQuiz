@@ -22,7 +22,7 @@ const Signin = () => {
     const handleClick = (e) => {
         e.preventDefault();
         if(user.email&&user.password){
-            axios.post('http://localhost:5000/user/login',{
+            axios.post('https://pro-quiz-ser.vercel.app/user/login',{
                 email: user.email,
                 password: user.password
             }).then(({data})=>{
@@ -58,7 +58,7 @@ showAlert({
     }
     useEffect(() => {
         const lToken = localStorage.getItem('localToken')
-        axios.get(`http://localhost:5000/user/auth?token=${lToken}`).then(({ data }) => {
+        axios.get(`https://pro-quiz-ser.vercel.app/user/auth?token=${lToken}`).then(({ data }) => {
           if (data.type === 'success') {
        navigate('/')
           }

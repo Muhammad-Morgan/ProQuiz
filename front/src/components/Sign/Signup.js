@@ -28,7 +28,7 @@ const Signun = () => {
             myID: new Date().getTime().toString()
         }
         if(user.name&&user.email&&user.password&&user.type){
-            axios.post(`http://localhost:5000/user/register`,
+            axios.post(`https://pro-quiz-ser.vercel.app/user/register`,
             {
                 name: newUser.name.toLowerCase(),
                 email: newUser.email,
@@ -70,7 +70,7 @@ const Signun = () => {
     }
     useEffect(() => {
         const lToken = localStorage.getItem('localToken')
-        axios.get(`http://localhost:5000/user/auth?token=${lToken}`).then(({ data }) => {
+        axios.get(`https://pro-quiz-ser.vercel.app/user/auth?token=${lToken}`).then(({ data }) => {
           if (data.type === 'success') {
        navigate('/')
           }
