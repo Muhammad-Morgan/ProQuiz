@@ -52,7 +52,7 @@ const Nav = () => {
                                     {userInfo.name}
                                 </Link>
                                 <ul className={`dropdown-menu ${navConditions.dropDown ? 'show' : ''}`}>
-                                    <li><Link className="dropdown-item" to='/allquizes'>All Quizes</Link></li>
+                                    {userInfo.type === 'student' && <li><Link className="dropdown-item" to='/allquizes'>All Quizes</Link></li>}
                                     {userInfo.type === 'instructor' && <li><Link className="dropdown-item" to='/myquizes'>My Quizes</Link></li>
                                     }
                                     {userInfo.type === 'instructor' && <li><Link className="dropdown-item" to='/quiz'>Create Quiz</Link></li>
