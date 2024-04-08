@@ -10,7 +10,7 @@ const authUser = (req, res) => {
         type: 'failed',
         msg: 'no token'
     })
-    jwt.verify(token, process.env.SECRET_MSG, (err, decode) => {
+    jwt.verify(token, 'SECRET%msg%', (err, decode) => {
         if (err) {
             res.json({
                 type: 'failed',
@@ -37,7 +37,7 @@ const regUser = (req, res) => {
                 password: hash,
                 type
             }).then(() => {
-                const token = jwt.sign({ myID, name, type }, process.env.SECRET_MSG, { expiresIn: process.env.EXPIRE_TIME });
+                const token = jwt.sign({ myID, name, type }, 'SECRET%msg%', { expiresIn: '1h' });
                 res.json({
                     token,
                     type: 'success',
@@ -60,7 +60,7 @@ const logIn = (req,res)=>{
                 type: 'danger',
                 msg: 'wrong password !'
             })
-            const token = jwt.sign({myID: found.myID,name:found.name,type: found.type},process.env.SECRET_MSG,{expiresIn:process.env.EXPIRE_TIME})
+            const token = jwt.sign({myID: found.myID,name:found.name,type: found.type},'SECRET%msg%',{expiresIn: '1h'})
             res.json({
                 token,
                 type: 'success',

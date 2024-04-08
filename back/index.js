@@ -4,10 +4,8 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
-const dotenv = require('dotenv')
 
 // Initiallizing instences
-dotenv.config()
 const app = express()
 
 // My Requires
@@ -20,7 +18,7 @@ app.use(express.json())
 app.use(cors())
 
 // Connecting to DB
-mongoose.connect(process.env.URI)
+mongoose.connect('mongodb+srv://muhammad:helloworld123@jobster.r7jsbjp.mongodb.net/quiznew?retryWrites=true&w=majority')
 mongoose.connection.once('open',()=> console.log('Connected to MongoDB'))
 
 // Routes
@@ -34,4 +32,4 @@ app.get('/',(req,res)=>{
 })
 
 // Checking the server
-app.listen(process.env.PORT, ()=> console.log(`Listening to Port: ${process.env.PORT}`))
+app.listen(5000, ()=> console.log(`Listening to Port: 5000`))
