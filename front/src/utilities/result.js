@@ -1,7 +1,7 @@
 import axios from 'axios'
 export const getResult = (_id,startLoading,endLoading,setResult) => {
     startLoading()
-    axios.get(`http://localhost:5000/result/getresult?_id=${_id}`).then(({data})=>{
+    axios.get(`https://pro-quiz-ser.vercel.app/result/getresult?_id=${_id}`).then(({data})=>{
     const {result}=data
     setResult(result);
     endLoading()
