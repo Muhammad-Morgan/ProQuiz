@@ -40,7 +40,7 @@ const QuizComp = () => {
     }
     useEffect(() => {
         startLoading()
-        axios.get(`http://localhost:5000/quiz/getquiz?_id=${_id}`).then(({ data }) => {
+        axios.get(`https://pro-quiz-ser.vercel.app/quiz/getquiz?_id=${_id}`).then(({ data }) => {
             const { quiz,questionsAmount } = data;
             setDisplayQuestion(quiz)
             setQuestionQuantity(questionsAmount)
@@ -160,7 +160,7 @@ const QuizComp = () => {
                         {(submitCondition && !nextQuestion) &&
                             <button
                                 onClick={() => {
-                                    axios.put(`http://localhost:5000/quiz/submitquiz?_id=${_id}`, { questionAndAnswer }).then(({ data }) => {
+                                    axios.put(`https://pro-quiz-ser.vercel.app/quiz/submitquiz?_id=${_id}`, { questionAndAnswer }).then(({ data }) => {
                                         const { msg, type } = data
                                         showAlert({
                                             msg,
