@@ -35,7 +35,7 @@ const Edit = () => {
     const handleClick = (e) => {
         e.preventDefault();
         if (quiz.name && quiz.questionsAmount) {
-            axios.post(`http://localhost:5000/quiz/updatename?_id=${_id}`, {
+            axios.post(`https://pro-quiz-ser.vercel.app/quiz/updatename?_id=${_id}`, {
                 name: quiz.name.toLowerCase(),
                 author: userInfo.name.toLowerCase(),
                 questionsAmount: quiz.questionsAmount,
@@ -67,7 +67,7 @@ const Edit = () => {
         authorize({ updateInfo, showAlert, navigate })
     }, [userInfo.name]);
     useEffect(() => {
-axios.get(`http://localhost:5000/quiz/getquiz?_id=${_id}`).then(({data})=>{
+axios.get(`https://pro-quiz-ser.vercel.app/quiz/getquiz?_id=${_id}`).then(({data})=>{
     const {quiz} = data;
     setDisplayQuestion(quiz)
 }).catch(err=>console.log(err))

@@ -7,7 +7,7 @@ const Home = () => {
   const { userInfo, showAlert, updateInfo } = useGlobalContext();
   useEffect(() => {
     const lToken = localStorage.getItem('localToken')
-    axios.get(`http://localhost:5000/user/auth?token=${lToken}`).then(({ data }) => {
+    axios.get(`https://pro-quiz-ser.vercel.app/user/auth?token=${lToken}`).then(({ data }) => {
       const { myToken } = data
       if (data.type === 'success') {
         const myData = jwtDecode(myToken)

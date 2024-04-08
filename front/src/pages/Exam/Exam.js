@@ -75,7 +75,7 @@ const Exam = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:5000/quiz/submitmyquiz?_id=${_id}`, {
+        axios.put(`https://pro-quiz-ser.vercel.app/quiz/submitmyquiz?_id=${_id}`, {
             name: userInfo.name,
             myID: userInfo.myID,
             quizName: myQuiz.name,

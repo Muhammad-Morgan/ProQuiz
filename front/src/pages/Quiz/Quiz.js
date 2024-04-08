@@ -26,7 +26,7 @@ const Quiz = () => {
   const handleClick = (e) => {
     e.preventDefault();
     if (quiz.name && quiz.questionsAmount) {
-      axios.post(`http://localhost:5000/quiz/createname?myID=${userInfo.myID}`, {
+      axios.post(`https://pro-quiz-ser.vercel.app/quiz/createname?myID=${userInfo.myID}`, {
         name: quiz.name.toLowerCase(),
         author: userInfo.name.toLowerCase(),
         questionsAmount: quiz.questionsAmount,

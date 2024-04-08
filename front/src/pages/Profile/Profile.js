@@ -26,7 +26,7 @@ const Profile = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     startLoading()
-    axios.put(`http://localhost:5000/user/updateuser?myID=${userInfo.myID}`,{
+    axios.put(`https://pro-quiz-ser.vercel.app/user/updateuser?myID=${userInfo.myID}`,{
       name: profile.name?.toLowerCase(),
       email: profile.email,
       location: profile.location,

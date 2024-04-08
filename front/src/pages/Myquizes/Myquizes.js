@@ -47,7 +47,7 @@ const Myquizes = () => {
               value={localSearchName}
               onChange={(e) => {
                 setLocalSearchName(e.target.value)
-                axios.get(`http://localhost:5000/quiz/searchname?searchLetter=${e.target.value}`).then(({ data }) => {
+                axios.get(`https://pro-quiz-ser.vercel.app/quiz/searchname?searchLetter=${e.target.value}`).then(({ data }) => {
                   const { quizes } = data
                   setQuizes(quizes)
                 }).then(err => console.log(err))
